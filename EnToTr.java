@@ -27,6 +27,7 @@ public class EnToTr {
 
     private void createPacket(String pack_name, String prmkey, SQLiteDatabase database, String difficult)
     {
+        pack_name =  pack_name.replace("'","''");
         database.execSQL("insert into packets(packet_name,prmkey,ifShared,difficult) values('"+pack_name+"','"+prmkey+"','0','"+difficult+"')");
     }
 
@@ -42,40 +43,43 @@ public class EnToTr {
         adjectives();
         animal();
         appearance();
-        drinks();
-        colors();
-        times();
-        meeting();
-        fruitAndVegetable();
-        verbs();
-        jobs();
-        emotion();
-        trip();
-        family();
-        body();
-        electronic_dev();
-        communicate();
-        tools();
-        computer();
-        office();
-        sport();
-        view();
-        health();
         art();
-        trade();
-        law();
-        future_tense();
-        home();
-        music();
+        body();
+        colors();
+        communicate();
+        computer();
         country();
+        days();
+        drinks();
+        electronic_dev();
+        emotion();
         exm_senteces();
-        shopping();
+        family();
+        fruitAndVegetable();
+        future_tense();
+        health();
+        home();
+        jobs();
+        law();
+        meeting();
+        months();
+        music();
         number();
+        office();
+        personality();
         question();
         religion();
+        shopping();
         space();
-        personality();
+        sport();
+        times();
+        tools();
+        trade();
+        trip();
+        verbs();
+        view();
         workLife();
+
     }
     private void workLife()
     {
@@ -161,7 +165,302 @@ public class EnToTr {
         translate="Kıdemsiz";
         insertData(word,translate,prmkey,database);
     }
-    
+    private void family()
+    {
+        difficult ="0";
+        packet_name = "Aile";
+        prmkey = random();
+        createPacket(packet_name,prmkey,database, difficult);
+        word = "Family";
+        translate="Aile";
+        insertData(word,translate,prmkey,database);
+        word = "Father";
+        translate="Baba";
+        insertData(word,translate,prmkey,database);
+        word = "Mother";
+        translate="Anne";
+        insertData(word,translate,prmkey,database);
+        word = "Son";
+        translate="Oğul";
+        insertData(word,translate,prmkey,database);
+        word = "Daughter";
+        translate="Kız çocuk";
+        insertData(word,translate,prmkey,database);
+        word = "Parent";
+        translate="Ebeveyn";
+        insertData(word,translate,prmkey,database);
+        word = "Child";
+        translate="Çocuk";
+        insertData(word,translate,prmkey,database);
+        word = "Children";
+        translate="Çocuklar";
+        insertData(word,translate,prmkey,database);
+        word = "Husband";
+        translate="Eş ( Erkek )";
+        insertData(word,translate,prmkey,database);
+        word = "Wife";
+        translate="Eş ( Kadın )";
+        insertData(word,translate,prmkey,database);
+        word = "Brother";
+        translate="Erkek kardeş";
+        insertData(word,translate,prmkey,database);
+        word = "Sister";
+        translate="Kız kardeş";
+        insertData(word,translate,prmkey,database);
+        word = "Uncle";
+        translate="Amca - Dayı";
+        insertData(word,translate,prmkey,database);
+        word = "Aunt";
+        translate="Hala - Teyze";
+        insertData(word,translate,prmkey,database);
+        word = "Cousin";
+        translate="Kuzen";
+        insertData(word,translate,prmkey,database);
+        word = "Grandfather";
+        translate="Dede - Büyükbaba";
+        insertData(word,translate,prmkey,database);
+        word = "Grandmother";
+        translate="Nine - Büyükanne";
+        insertData(word,translate,prmkey,database);
+        word = "Marriage";
+        translate="Evlilik";
+        insertData(word,translate,prmkey,database);
+        word = "Engaged";
+        translate="Nişanlı";
+        insertData(word,translate,prmkey,database);
+        word = "Stepmother";
+        translate="Üvey Anne";
+        insertData(word,translate,prmkey,database);
+        word = "Stepdaughter";
+        translate="Üvey kız";
+        insertData(word,translate,prmkey,database);
+        word = "Stepson";
+        translate="Üvey oğul";
+        insertData(word,translate,prmkey,database);
+    }
+    private void tools()
+    {
+        packet_name = "Aletler";
+        prmkey = random();
+        difficult ="1";
+        createPacket(packet_name,prmkey,database, difficult);
+
+        word = "Tools";
+        translate="Aletler";
+        insertData(word,translate,prmkey,database);
+        word = "Equipment";
+        translate="Ekipmanlar";
+        insertData(word,translate,prmkey,database);
+        word = "Paintbrush";
+        translate="Boya fırçası";
+        insertData(word,translate,prmkey,database);
+        word = "Paint";
+        translate="Boya";
+        insertData(word,translate,prmkey,database);
+        word = "Stepladder";
+        translate="Merdiven";
+        insertData(word,translate,prmkey,database);
+        word = "Hammer";
+        translate="Çekiç";
+        insertData(word,translate,prmkey,database);
+        word = "Nail";
+        translate="Çivi";
+        insertData(word,translate,prmkey,database);
+        word = "Screw";
+        translate="Vida";
+        insertData(word,translate,prmkey,database);
+        word = "Screwdriver";
+        translate="Tornavida";
+        insertData(word,translate,prmkey,database);
+        word = "Drill";
+        translate="Matkap";
+        insertData(word,translate,prmkey,database);
+        word = "Pliers";
+        translate="Kerpeten";
+        insertData(word,translate,prmkey,database);
+        word = "Toolbox";
+        translate="Alet kutusu";
+        insertData(word,translate,prmkey,database);
+        word = "Axe";
+        translate="Balta";
+        insertData(word,translate,prmkey,database);
+        word = "Cutter";
+        translate="Maket bıçağı";
+        insertData(word,translate,prmkey,database);
+        word = "Broom";
+        translate="Süpürge";
+        insertData(word,translate,prmkey,database);
+        word = "Bucket";
+        translate="Kova";
+        insertData(word,translate,prmkey,database);
+        word = "Scissors";
+        translate="Makas";
+        insertData(word,translate,prmkey,database);
+        word = "Flashlight";
+        translate="El feneri";
+        insertData(word,translate,prmkey,database);
+    }
+    private void emotion()
+    {
+        packet_name = "Duygular";
+        prmkey = random();
+        difficult ="0";
+        createPacket(packet_name,prmkey,database, difficult);
+
+        word = "Happy";
+        translate="Mutlu";
+        insertData(word,translate,prmkey,database);
+
+        word = "Unhappy";
+        translate="Mutsuz";
+        insertData(word,translate,prmkey,database);
+
+        word = "Sad";
+        translate="Üzgün";
+        insertData(word,translate,prmkey,database);
+
+        word = "Good";
+        translate="İyi";
+        insertData(word,translate,prmkey,database);
+
+        word = "Alone";
+        translate="Yalnız";
+        insertData(word,translate,prmkey,database);
+
+        word = "Reliable";
+        translate="Güvenilir";
+        insertData(word,translate,prmkey,database);
+
+        word = "Terrible";
+        translate="Korkunç";
+        insertData(word,translate,prmkey,database);
+
+        word = "Confused";
+        translate="Şaşkın";
+        insertData(word,translate,prmkey,database);
+
+        word = "Upset";
+        translate="Üzgün";
+        insertData(word,translate,prmkey,database);
+
+        word = "Shy";
+        translate="Utangaç";
+        insertData(word,translate,prmkey,database);
+
+        word = "Angry";
+        translate="Kızgın";
+        insertData(word,translate,prmkey,database);
+
+        word = "Nervous";
+        translate="Sinirli";
+        insertData(word,translate,prmkey,database);
+
+        word = "Worried";
+        translate="Endişeli";
+        insertData(word,translate,prmkey,database);
+
+        word = "Aggressive";
+        translate="Agresif";
+        insertData(word,translate,prmkey,database);
+
+        word = "Indecisive";
+        translate="Kararsız";
+        insertData(word,translate,prmkey,database);
+
+        word = "Embarrassed";
+        translate="Mahçup";
+        insertData(word,translate,prmkey,database);
+
+        word = "Uneasy";
+        translate="Huzursuz";
+        insertData(word,translate,prmkey,database);
+
+        word = "Pessimistic";
+        translate="Kötümser";
+        insertData(word,translate,prmkey,database);
+
+        word = "Helpless";
+        translate="Çaresiz";
+        insertData(word,translate,prmkey,database);
+
+        word = "Insensitive";
+        translate="Duyarsız";
+        insertData(word,translate,prmkey,database);
+
+        word = "Optimistic";
+        translate="İyimser";
+        insertData(word,translate,prmkey,database);
+
+        word = "Quiet";
+        translate="Sessiz";
+        insertData(word,translate,prmkey,database);
+
+        word = "Calm";
+        translate="Sakin";
+        insertData(word,translate,prmkey,database);
+
+        word = "Wonderful";
+        translate="Müthiş";
+        insertData(word,translate,prmkey,database);
+
+        word = "Cheerful";
+        translate="Neşeli";
+        insertData(word,translate,prmkey,database);
+
+        word = "Lucky";
+        translate="Şanslı";
+        insertData(word,translate,prmkey,database);
+
+        word = "Afflicted";
+        translate="Dertli";
+        insertData(word,translate,prmkey,database);
+    }
+    private void months()
+    {
+        packet_name = "Aylar";
+        prmkey = random();
+        difficult ="0";
+        createPacket(packet_name,prmkey,database, difficult);
+
+        word = "January";
+        translate="Ocak";
+        insertData(word,translate,prmkey,database);
+        word = "February";
+        translate="Şubat";
+        insertData(word,translate,prmkey,database);
+        word = "March";
+        translate="Mart";
+        insertData(word,translate,prmkey,database);
+        word = "April";
+        translate="Nisan";
+        insertData(word,translate,prmkey,database);
+        word = "May";
+        translate="Mayıs";
+        insertData(word,translate,prmkey,database);
+        word = "June";
+        translate="Haziran";
+        insertData(word,translate,prmkey,database);
+        word = "July";
+        translate="Temmuz";
+        insertData(word,translate,prmkey,database);
+        word = "August";
+        translate="Ağustos";
+        insertData(word,translate,prmkey,database);
+        word = "September";
+        translate="Eylül";
+        insertData(word,translate,prmkey,database);
+        word = "October";
+        translate="Ekim";
+        insertData(word,translate,prmkey,database);
+        word = "November";
+        translate="Kasım";
+        insertData(word,translate,prmkey,database);
+        word = "December";
+        translate="Aralık";
+        insertData(word,translate,prmkey,database);
+
+
+    }
     private void personality()
     {
         packet_name = "Kişilik";
@@ -172,108 +471,78 @@ public class EnToTr {
         word = "Able";
         translate="Yetenekli";
         insertData(word,translate,prmkey,database);
-        
         word = "Absurd";
         translate="Saçma";
         insertData(word,translate,prmkey,database);
-        
         word = "Alert";
         translate="Uyanık";
         insertData(word,translate,prmkey,database);
-        
         word = "Brainy";
         translate="Zeki - Akıllı";
         insertData(word,translate,prmkey,database);
-        
         word = "Brutal";
         translate="Acımasız";
         insertData(word,translate,prmkey,database);
-        
         word = "Competent";
         translate="Yetkin";
         insertData(word,translate,prmkey,database);
-        
-        word = "Argumentative";
-        translate="Münakaşacı , tartışmacı";
-        insertData(word,translate,prmkey,database);
-        
+
         word = "Bad-tempered";
         translate="Huysuz";
         insertData(word,translate,prmkey,database);
-        
         word = "Cheeky";
         translate="Arsız";
         insertData(word,translate,prmkey,database);
-        
-        word = "Clumsy";
-        translate="Hödük";
-        insertData(word,translate,prmkey,database);
-        
+
         word = "Conceited";
         translate="Kendini beğenmiş";
         insertData(word,translate,prmkey,database);
-        
         word = "Coward";
         translate="Ödlek";
         insertData(word,translate,prmkey,database);
-        
         word = "Chickenshit";
         translate="Korkak";
         insertData(word,translate,prmkey,database);
-        
         word = "Harsh";
         translate="Sert";
         insertData(word,translate,prmkey,database);
-        
         word = "Infamous";
         translate="Adı kötüye çıkmış";
         insertData(word,translate,prmkey,database);
-        
         word = "Intolerant";
         translate="Müsamahasız";
         insertData(word,translate,prmkey,database);
-        
         word = "Insensitive";
         translate="Duygusuz";
         insertData(word,translate,prmkey,database);
-        
         word = "Narrow-minded";
         translate="Dar kafalı";
         insertData(word,translate,prmkey,database);
-        
         word = "Assertive";
         translate="İddialı";
         insertData(word,translate,prmkey,database);
-        
         word = "Attentive";
         translate="Özenli";
         insertData(word,translate,prmkey,database);
-        
         word = "Charitable";
         translate="Merhametli";
         insertData(word,translate,prmkey,database);
-        
         word = "Compassionate";
         translate="Şefkatli";
         insertData(word,translate,prmkey,database);
-        
         word = "Faithful";
         translate="Sadık";
         insertData(word,translate,prmkey,database);
-        
         word = "Frank";
         translate="Dürüst";
         insertData(word,translate,prmkey,database);
-        
         word = "Hospitable";
         translate="Konuksever";
         insertData(word,translate,prmkey,database);
-        
         word = "Jolly";
         translate="Keyifli";
         insertData(word,translate,prmkey,database);
     }
-    
     private void appearance()
     {
         packet_name = "Görünüş";
@@ -284,19 +553,15 @@ public class EnToTr {
         word = "Alike";
         translate="Benzer";
         insertData(word,translate,prmkey,database);
-        
         word = "Awkward";
         translate="Garip / rahatsız";
         insertData(word,translate,prmkey,database);
-        
         word = "Delicate";
         translate="Narin";
         insertData(word,translate,prmkey,database);
-        
         word = "Elegant";
         translate="Şık";
         insertData(word,translate,prmkey,database);
-        
         word = "Mature";
         translate="Olgun";
         insertData(word,translate,prmkey,database);
@@ -456,12 +721,7 @@ public class EnToTr {
         word = "God";
         translate="Tanrı";
         insertData(word,translate,prmkey,database);
-        word = "Angel";
-        translate="Melek";
-        insertData(word,translate,prmkey,database);
-        word = "Devil";
-        translate="Şeytan";
-        insertData(word,translate,prmkey,database);
+
         word = "Demon";
         translate="İblis";
         insertData(word,translate,prmkey,database);
@@ -506,12 +766,6 @@ public class EnToTr {
         insertData(word,translate,prmkey,database);
         word = "Islam";
         translate="İslam";
-        insertData(word,translate,prmkey,database);
-        word = "Christianity";
-        translate="Hristiyanlık";
-        insertData(word,translate,prmkey,database);
-        word = "Judaism";
-        translate="Yahudilik";
         insertData(word,translate,prmkey,database);
         word = "Secular";
         translate="Laik";
@@ -813,9 +1067,7 @@ public class EnToTr {
         word = "Island";
         translate="Ada";
         insertData(word,translate,prmkey,database);
-        word = "Cave";
-        translate="Mağara";
-        insertData(word,translate,prmkey,database);
+
         word = "Waterfall";
         translate="Şelale";
         insertData(word,translate,prmkey,database);
@@ -881,9 +1133,7 @@ public class EnToTr {
         word = "Allergy";
         translate="Alerji";
         insertData(word,translate,prmkey,database);
-        word = "Bleeding";
-        translate="Kanama";
-        insertData(word,translate,prmkey,database);
+
         word = "Disease";
         translate="Hastalık";
         insertData(word,translate,prmkey,database);
@@ -914,12 +1164,8 @@ public class EnToTr {
         word = "Physiotherapy";
         translate="Fizyoterapi";
         insertData(word,translate,prmkey,database);
-        word = "To cough";
-        translate="Öksürmek";
-        insertData(word,translate,prmkey,database);
-        word = "Rabies";
-        translate="Kuduz";
-        insertData(word,translate,prmkey,database);
+
+
         word = "Pneumonia";
         translate="Zatürre";
         insertData(word,translate,prmkey,database);
@@ -959,9 +1205,7 @@ public class EnToTr {
         word = "Diabetes";
         translate="Diyabet";
         insertData(word,translate,prmkey,database);
-        word = "Epilepsy";
-        translate="Epilepsi";
-        insertData(word,translate,prmkey,database);
+
         word = "Fatigue";
         translate="Yorgunluk";
         insertData(word,translate,prmkey,database);
@@ -1198,68 +1442,6 @@ public class EnToTr {
         translate="Dönüştürmek";
         insertData(word,translate,prmkey,database);
     }
-    private void tools()
-    {
-        packet_name = "Aletler";
-        prmkey = random();
-        difficult ="1";
-        createPacket(packet_name,prmkey,database, difficult);
-
-        word = "Tools";
-        translate="Aletler";
-        insertData(word,translate,prmkey,database);
-        word = "Equipment";
-        translate="Ekipmanlar";
-        insertData(word,translate,prmkey,database);
-        word = "Paintbrush";
-        translate="Boya fırçası";
-        insertData(word,translate,prmkey,database);
-        word = "Paint";
-        translate="Boya";
-        insertData(word,translate,prmkey,database);
-        word = "Stepladder";
-        translate="Merdiven";
-        insertData(word,translate,prmkey,database);
-        word = "Hammer";
-        translate="Çekiç";
-        insertData(word,translate,prmkey,database);
-        word = "Nail";
-        translate="Çivi";
-        insertData(word,translate,prmkey,database);
-        word = "Screw";
-        translate="Vida";
-        insertData(word,translate,prmkey,database);
-        word = "Screwdriver";
-        translate="Tornavida";
-        insertData(word,translate,prmkey,database);
-        word = "Drill";
-        translate="Matkap";
-        insertData(word,translate,prmkey,database);
-        word = "Pliers";
-        translate="Kerpeten";
-        insertData(word,translate,prmkey,database);
-        word = "Toolbox";
-        translate="Alet kutusu";
-        insertData(word,translate,prmkey,database);
-        word = "Axe";
-        translate="Balta";
-        insertData(word,translate,prmkey,database);
-        word = "Cutter";
-        translate="Maket bıçağı";
-        insertData(word,translate,prmkey,database);
-        word = "Broom";
-        translate="Süpürge";
-        insertData(word,translate,prmkey,database);
-        word = "Bucket";
-        translate="Kova";
-        insertData(word,translate,prmkey,database);
-        word = "Scissors";
-        translate="Makas";
-        insertData(word,translate,prmkey,database);
-        word = "Flashlight";
-        translate="El feneri";
-        insertData(word,translate,prmkey,database);
-    }
     private void art()
     {
         packet_name = "Sanat";
@@ -1482,9 +1664,6 @@ public class EnToTr {
         createPacket(packet_name,prmkey,database, difficult);
         word = "Law";
         translate="Kanun";
-        insertData(word,translate,prmkey,database);
-        word = "Arson";
-        translate="Kundakçılık";
         insertData(word,translate,prmkey,database);
         word = "Arrest";
         translate="Tutuklama";
@@ -2183,79 +2362,6 @@ public class EnToTr {
         translate="Dil";
         insertData(word,translate,prmkey,database);
     }
-    private void family()
-    {
-        difficult ="0";
-        packet_name = "Aile";
-        prmkey = random();
-        createPacket(packet_name,prmkey,database, difficult);
-        word = "Family";
-        translate="Aile";
-        insertData(word,translate,prmkey,database);
-        word = "Father";
-        translate="Baba";
-        insertData(word,translate,prmkey,database);
-        word = "Mother";
-        translate="Anne";
-        insertData(word,translate,prmkey,database);
-        word = "Son";
-        translate="Oğul";
-        insertData(word,translate,prmkey,database);
-        word = "Daughter";
-        translate="Kız çocuk";
-        insertData(word,translate,prmkey,database);
-        word = "Parent";
-        translate="Ebeveyn";
-        insertData(word,translate,prmkey,database);
-        word = "Child";
-        translate="Çocuk";
-        insertData(word,translate,prmkey,database);
-        word = "Children";
-        translate="Çocuklar";
-        insertData(word,translate,prmkey,database);
-        word = "Husband";
-        translate="Eş ( Erkek )";
-        insertData(word,translate,prmkey,database);
-        word = "Wife";
-        translate="Eş ( Kadın )";
-        insertData(word,translate,prmkey,database);
-        word = "Brother";
-        translate="Erkek kardeş";
-        insertData(word,translate,prmkey,database);
-        word = "Sister";
-        translate="Kız kardeş";
-        insertData(word,translate,prmkey,database);
-        word = "Uncle";
-        translate="Amca - Dayı";
-        insertData(word,translate,prmkey,database);
-        word = "Aunt";
-        translate="Hala - Teyze";
-        insertData(word,translate,prmkey,database);
-        word = "Cousin";
-        translate="Kuzen";
-        insertData(word,translate,prmkey,database);
-        word = "Grandfather";
-        translate="Dede - Büyükbaba";
-        insertData(word,translate,prmkey,database);
-        word = "Grandmother";
-        translate="Nine - Büyükanne";
-        insertData(word,translate,prmkey,database);
-        word = "Marriage";
-        translate="Evlilik";
-        insertData(word,translate,prmkey,database);
-        word = "Engaged";
-        translate="Nişanlı";
-        insertData(word,translate,prmkey,database);
-        word = "Stepmother";
-        translate="Üvey Anne";
-        insertData(word,translate,prmkey,database);
-        word = "Stepdaughter";
-        translate="Üvey kız";
-        insertData(word,translate,prmkey,database);
-        word = "Stepson";
-        translate="Üvey oğul";
-        insertData(word,translate,prmkey,database);
-    }
     private void adjectives()
     {
         packet_name = "Sıfatlar";
@@ -2479,121 +2585,6 @@ public class EnToTr {
         insertData(word,translate,prmkey,database);
         word = "Sheep";
         translate="Koyun";
-        insertData(word,translate,prmkey,database);
-    }
-    private void emotion()
-    {
-        packet_name = "Duygular";
-        prmkey = random();
-        difficult ="0";
-        createPacket(packet_name,prmkey,database, difficult);
-
-        word = "Happy";
-        translate="Mutlu";
-        insertData(word,translate,prmkey,database);
-
-        word = "Unhappy";
-        translate="Mutsuz";
-        insertData(word,translate,prmkey,database);
-
-        word = "Sad";
-        translate="Üzgün";
-        insertData(word,translate,prmkey,database);
-
-        word = "Good";
-        translate="İyi";
-        insertData(word,translate,prmkey,database);
-
-        word = "Alone";
-        translate="Yalnız";
-        insertData(word,translate,prmkey,database);
-
-        word = "Reliable";
-        translate="Güvenilir";
-        insertData(word,translate,prmkey,database);
-
-        word = "Terrible";
-        translate="Korkunç";
-        insertData(word,translate,prmkey,database);
-
-        word = "Confused";
-        translate="Şaşkın";
-        insertData(word,translate,prmkey,database);
-
-        word = "Upset";
-        translate="Üzgün";
-        insertData(word,translate,prmkey,database);
-
-        word = "Shy";
-        translate="Utangaç";
-        insertData(word,translate,prmkey,database);
-
-        word = "Angry";
-        translate="Kızgın";
-        insertData(word,translate,prmkey,database);
-
-        word = "Nervous";
-        translate="Sinirli";
-        insertData(word,translate,prmkey,database);
-
-        word = "Worried";
-        translate="Endişeli";
-        insertData(word,translate,prmkey,database);
-
-        word = "Aggressive";
-        translate="Agresif";
-        insertData(word,translate,prmkey,database);
-
-        word = "Indecisive";
-        translate="Kararsız";
-        insertData(word,translate,prmkey,database);
-
-        word = "Embarrassed";
-        translate="Mahçup";
-        insertData(word,translate,prmkey,database);
-
-        word = "Uneasy";
-        translate="Huzursuz";
-        insertData(word,translate,prmkey,database);
-
-        word = "Pessimistic";
-        translate="Kötümser";
-        insertData(word,translate,prmkey,database);
-
-        word = "Helpless";
-        translate="Çaresiz";
-        insertData(word,translate,prmkey,database);
-
-        word = "Insensitive";
-        translate="Duyarsız";
-        insertData(word,translate,prmkey,database);
-
-        word = "Optimistic";
-        translate="İyimser";
-        insertData(word,translate,prmkey,database);
-
-        word = "Quiet";
-        translate="Sessiz";
-        insertData(word,translate,prmkey,database);
-
-        word = "Calm";
-        translate="Sakin";
-        insertData(word,translate,prmkey,database);
-
-        word = "Wonderful";
-        translate="Müthiş";
-        insertData(word,translate,prmkey,database);
-
-        word = "Cheerful";
-        translate="Neşeli";
-        insertData(word,translate,prmkey,database);
-
-        word = "Lucky";
-        translate="Şanslı";
-        insertData(word,translate,prmkey,database);
-
-        word = "Afflicted";
-        translate="Dertli";
         insertData(word,translate,prmkey,database);
     }
     private void trip()
@@ -3400,6 +3391,36 @@ public class EnToTr {
         insertData(word,translate,prmkey,database);
 
     }
+    private void days()
+    {
+        packet_name = "Günler";
+        prmkey = random();
+        difficult ="0";
+        createPacket(packet_name,prmkey,database, difficult);
+
+        word = "Monday";
+        translate="Pazartesi";
+        insertData(word,translate,prmkey,database);
+        word = "Tuesday";
+        translate="Salı";
+        insertData(word,translate,prmkey,database);
+        word = "Wednesday";
+        translate="Çarşamba";
+        insertData(word,translate,prmkey,database);
+        word = "Thursday";
+        translate="Perşembe";
+        insertData(word,translate,prmkey,database);
+        word = "Friday";
+        translate="Cuma";
+        insertData(word,translate,prmkey,database);
+        word = "Saturday";
+        translate="Cumartesi";
+        insertData(word,translate,prmkey,database);
+        word = "Sunday";
+        translate="Pazar";
+        insertData(word,translate,prmkey,database);
+
+    }
     private void times()
     {
         packet_name = "Zamanlar";
@@ -3484,27 +3505,6 @@ public class EnToTr {
         word = "Day";
         translate="Gün";
         insertData(word,translate,prmkey,database);
-        word = "Monday";
-        translate="Pazartesi";
-        insertData(word,translate,prmkey,database);
-        word = "Tuesday";
-        translate="Salı";
-        insertData(word,translate,prmkey,database);
-        word = "Wednesday";
-        translate="Çarşamba";
-        insertData(word,translate,prmkey,database);
-        word = "Thursday";
-        translate="Perşembe";
-        insertData(word,translate,prmkey,database);
-        word = "Friday";
-        translate="Cuma";
-        insertData(word,translate,prmkey,database);
-        word = "Saturday";
-        translate="Cumartesi";
-        insertData(word,translate,prmkey,database);
-        word = "Sunday";
-        translate="Pazar";
-        insertData(word,translate,prmkey,database);
         word = "Winter";
         translate="Kış";
         insertData(word,translate,prmkey,database);
@@ -3563,7 +3563,8 @@ public class EnToTr {
 
     }
 
-    private void drinks() {
+    private void drinks()
+    {
         packet_name = "İçecekler";
         prmkey = random();
         difficult ="0";
