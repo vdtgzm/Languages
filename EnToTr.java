@@ -161,6 +161,7 @@ public class EnToTr {
         translate="Kıdemsiz";
         insertData(word,translate,prmkey,database);
     }
+    
     private void personality()
     {
         packet_name = "Kişilik";
@@ -171,82 +172,108 @@ public class EnToTr {
         word = "Able";
         translate="Yetenekli";
         insertData(word,translate,prmkey,database);
+        
         word = "Absurd";
         translate="Saçma";
         insertData(word,translate,prmkey,database);
+        
         word = "Alert";
         translate="Uyanık";
         insertData(word,translate,prmkey,database);
+        
         word = "Brainy";
         translate="Zeki - Akıllı";
         insertData(word,translate,prmkey,database);
+        
         word = "Brutal";
         translate="Acımasız";
         insertData(word,translate,prmkey,database);
+        
         word = "Competent";
         translate="Yetkin";
         insertData(word,translate,prmkey,database);
+        
         word = "Argumentative";
         translate="Münakaşacı , tartışmacı";
         insertData(word,translate,prmkey,database);
+        
         word = "Bad-tempered";
         translate="Huysuz";
         insertData(word,translate,prmkey,database);
+        
         word = "Cheeky";
         translate="Arsız";
         insertData(word,translate,prmkey,database);
+        
         word = "Clumsy";
         translate="Hödük";
         insertData(word,translate,prmkey,database);
+        
         word = "Conceited";
         translate="Kendini beğenmiş";
         insertData(word,translate,prmkey,database);
+        
         word = "Coward";
         translate="Ödlek";
         insertData(word,translate,prmkey,database);
+        
         word = "Chickenshit";
         translate="Korkak";
         insertData(word,translate,prmkey,database);
+        
         word = "Harsh";
         translate="Sert";
         insertData(word,translate,prmkey,database);
+        
         word = "Infamous";
         translate="Adı kötüye çıkmış";
         insertData(word,translate,prmkey,database);
+        
         word = "Intolerant";
         translate="Müsamahasız";
         insertData(word,translate,prmkey,database);
+        
         word = "Insensitive";
         translate="Duygusuz";
         insertData(word,translate,prmkey,database);
+        
         word = "Narrow-minded";
         translate="Dar kafalı";
         insertData(word,translate,prmkey,database);
+        
         word = "Assertive";
         translate="İddialı";
         insertData(word,translate,prmkey,database);
+        
         word = "Attentive";
         translate="Özenli";
         insertData(word,translate,prmkey,database);
+        
         word = "Charitable";
         translate="Merhametli";
         insertData(word,translate,prmkey,database);
+        
         word = "Compassionate";
         translate="Şefkatli";
         insertData(word,translate,prmkey,database);
+        
         word = "Faithful";
         translate="Sadık";
         insertData(word,translate,prmkey,database);
+        
         word = "Frank";
         translate="Dürüst";
         insertData(word,translate,prmkey,database);
+        
         word = "Hospitable";
         translate="Konuksever";
         insertData(word,translate,prmkey,database);
+        
         word = "Jolly";
         translate="Keyifli";
         insertData(word,translate,prmkey,database);
     }
+    
     private void appearance()
     {
         packet_name = "Görünüş";
@@ -257,15 +284,19 @@ public class EnToTr {
         word = "Alike";
         translate="Benzer";
         insertData(word,translate,prmkey,database);
+        
         word = "Awkward";
         translate="Garip / rahatsız";
         insertData(word,translate,prmkey,database);
+        
         word = "Delicate";
         translate="Narin";
         insertData(word,translate,prmkey,database);
+        
         word = "Elegant";
         translate="Şık";
         insertData(word,translate,prmkey,database);
+        
         word = "Mature";
         translate="Olgun";
         insertData(word,translate,prmkey,database);
