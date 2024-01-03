@@ -10,6 +10,7 @@ public class EnToTr {
     private SQLiteDatabase database;
     private String packet_name,prmkey,difficult;
     private String word,translate;
+
     public EnToTr(Context context, SQLiteDatabase database) {
         this.context=context;
         this.database=database;
@@ -568,9 +569,6 @@ public class EnToTr {
         word = "Shabby";
         translate="Eski püskü";
         insertData(word,translate,prmkey,database);
-        word = "Upright";
-        translate="Dik";
-        insertData(word,translate,prmkey,database);
         word = "Suntanned";
         translate="Bronzlaşmış";
         insertData(word,translate,prmkey,database);
@@ -799,6 +797,10 @@ public class EnToTr {
 
         word = "How can I go to the Bank?";
         translate="Bankaya nasıl gidebilirim?";
+        insertData(word,translate,prmkey,database);
+
+        word = "Could you turn up the music please?";
+        translate="Müziğin sesini açar mısın lütfen?";
         insertData(word,translate,prmkey,database);
 
         insertData(word,translate,prmkey,database);
@@ -2469,8 +2471,8 @@ public class EnToTr {
         word = "Venom";
         translate="Zehir";
         insertData(word,translate,prmkey,database);
-        word = "Pack";
-        translate="Sürü";
+        word = "Tortoise";
+        translate="Kaplumbağa";
         insertData(word,translate,prmkey,database);
         word = "Reptile";
         translate="Sürüngen";
