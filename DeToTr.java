@@ -416,4 +416,35 @@ public class DeToTr {
         insertData(word,translate,prmkey,database);
     }
 
+     private void days()
+    {
+        packet_name = "Günler";
+        prmkey = random();
+        difficult ="0";
+        createPacket(packet_name,prmkey,database, difficult);
+        
+        word = "Montag";
+        translate="Pazartesi";
+        insertData(word,translate,prmkey,database);
+        word = "Dienstag";
+        translate="Salı";
+        insertData(word,translate,prmkey,database);
+        word = "Mittwoch";
+        translate="Çarşamba";
+        insertData(word,translate,prmkey,database);
+        word = "Donnerstag";
+        translate="Perşembe";
+        insertData(word,translate,prmkey,database);
+        word = "Freitag";
+        translate="Cuma";
+        insertData(word,translate,prmkey,database);
+        word = "Samstag";
+        translate="Cumartesi";
+        insertData(word,translate,prmkey,database);
+        word = "Sonntag";
+        translate="Pazar";
+        insertData(word,translate,prmkey,database);
+
+    }
+
 }
