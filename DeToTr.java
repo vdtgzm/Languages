@@ -124,4 +124,74 @@ public class DeToTr {
 
     }
 
+
+     private void communicate()
+    {
+        packet_name = "İletişim";
+        prmkey = random();
+        difficult ="1";
+        createPacket(packet_name,prmkey,difficult,database);
+
+        word = "Werbung";
+        translate="Reklam";
+        insertData(word,translate,prmkey,database);
+        word = "Massenmedien";
+        translate="Kitle iletişim araçları";
+        insertData(word,translate,prmkey,database);
+        word = "Sozialen Medien";
+        translate="Sosyal Medya";
+        insertData(word,translate,prmkey,database);
+        word = "Radiosender";
+        translate="Radyo istasyonu";
+        insertData(word,translate,prmkey,database);
+        word = "Nachricht";
+        translate="Haberler";
+        insertData(word,translate,prmkey,database);
+        word = "Soziales Netzwerk";
+        translate="Sosyal Ağ";
+        insertData(word,translate,prmkey,database);
+        word = "Bekannt geben";
+        translate="Duyurmak";
+        insertData(word,translate,prmkey,database);
+        word = "Hörer";
+        translate="Dinleyici";
+        insertData(word,translate,prmkey,database);
+        word = "Publikum";
+        translate="İzleyici";
+        insertData(word,translate,prmkey,database);
+        word = "Journalist";
+        translate="Gazeteci";
+        insertData(word,translate,prmkey,database);
+        word = "Reporter";
+        translate="Muhabir";
+        insertData(word,translate,prmkey,database);
+        word = "Dokumentarfilm";
+        translate="Belgesel";
+        insertData(word,translate,prmkey,database);
+        word = "Übertragen";
+        translate="Yayın";
+        insertData(word,translate,prmkey,database);
+        word = "Zeitung";
+        translate="Gazete";
+        insertData(word,translate,prmkey,database);
+        word = "Broschüre";
+        translate="Broşür";
+        insertData(word,translate,prmkey,database);
+        word = "Untertitel";
+        translate="Altyazı";
+        insertData(word,translate,prmkey,database);
+        word = "Zensur";
+        translate="Sansür";
+        insertData(word,translate,prmkey,database);
+        word = "Nachricht";
+        translate="Mesaj";
+        insertData(word,translate,prmkey,database);
+        word = "Brief";
+        translate="Mektup";
+        insertData(word,translate,prmkey,database);
+        word = "Fernsehen";
+        translate="Televizyon";
+        insertData(word,translate,prmkey,database);
+    }
+
 }
