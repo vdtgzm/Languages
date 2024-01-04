@@ -40,12 +40,8 @@ public class DeToTr {
     public void fill()
     {
 
-        adjectives();
-     /* animal();
-        appearance();
-        art();
-        body();
-        colors();
+        /*
+    
         communicate();
         computer();
         country();
@@ -83,108 +79,49 @@ public class DeToTr {
          */
     }
 
-    private void adjectives()
+   private void colors()
     {
-        packet_name = "Sıfatlar";
+        packet_name = "Renkler";
         prmkey = random();
         difficult ="0";
-        createPacket(packet_name,prmkey,difficult, database);
-
-        word = "Neu";
-        translate="Yeni";
+        createPacket(packet_name,prmkey,difficult,database);
+        word = "Rot";
+        translate="Kırmızı";
+        insertData(word,translate,prmkey,database);
+        word = "Blau";
+        translate="Mavi";
+        insertData(word,translate,prmkey,database);
+        word = "Gelb";
+        translate="Sarı";
+        insertData(word,translate,prmkey,database);
+        word = "Schwarz";
+        translate="Siyah";
+        insertData(word,translate,prmkey,database);
+        word = "Weiß";
+        translate="Beyaz";
+        insertData(word,translate,prmkey,database);
+        word = "Grau";
+        translate="Gri";
+        insertData(word,translate,prmkey,database);
+        word = "Lila";
+        translate="Mor";
+        insertData(word,translate,prmkey,database);
+        word = "Navy blau";
+        translate="Lacivert";
+        insertData(word,translate,prmkey,database);
+        word = "Türkis";
+        translate="Turkuaz";
+        insertData(word,translate,prmkey,database);
+        word = "Violett";
+        translate="Eflatun";
+        insertData(word,translate,prmkey,database);
+        word = "Farbig";
+        translate="Renkli";
+        insertData(word,translate,prmkey,database);
+        word = "Bunt";
+        translate="Rengarenk";
         insertData(word,translate,prmkey,database);
 
-        word = "Alt";
-        translate="Eski";
-        insertData(word,translate,prmkey,database);
-
-        word = "Groß";
-        translate="Büyük";
-        insertData(word,translate,prmkey,database);
-
-        word = "Klein";
-        translate="Küçük";
-        insertData(word,translate,prmkey,database);
-
-        word = "Groß";
-        translate="Geniş";
-        insertData(word,translate,prmkey,database);
-
-        word = "Anders";
-        translate="Farklı";
-        insertData(word,translate,prmkey,database);
-
-        word = "Wenig";
-        translate="Az";
-        insertData(word,translate,prmkey,database);
-
-        word = "Lang";
-        translate="Uzun";
-        insertData(word,translate,prmkey,database);
-
-        word = "Wichtig";
-        translate="Önemli";
-        insertData(word,translate,prmkey,database);
-
-        word = "Am besten";
-        translate="En iyi";
-        insertData(word,translate,prmkey,database);
-
-        word = "Niedrig";
-        translate="Düşük";
-        insertData(word,translate,prmkey,database);
-
-        word = "Hart";
-        translate="Zor";
-        insertData(word,translate,prmkey,database);
-
-        word = "Wirtschaftlich";
-        translate="Ekonomik";
-        insertData(word,translate,prmkey,database);
-
-        word = "Stark";
-        translate="Güçlü";
-        insertData(word,translate,prmkey,database);
-
-        word = "Berühmt";
-        translate="Ünlü";
-        insertData(word,translate,prmkey,database);
-
-        word = "Besonders";
-        translate="Özel";
-        insertData(word,translate,prmkey,database);
-
-        word = "Einfach";
-        translate="Kolay";
-        insertData(word,translate,prmkey,database);
-
-        word = "Clever";
-        translate="Zeki";
-        insertData(word,translate,prmkey,database);
-
-        word = "Schwierig";
-        translate="Zor";
-        insertData(word,translate,prmkey,database);
-
-        word = "Kurz";
-        translate="Kısa";
-        insertData(word,translate,prmkey,database);
-
-        word = "Ehrlich";
-        translate="Dürüst";
-        insertData(word,translate,prmkey,database);
-
-        word = "Privat";
-        translate="Özel";
-        insertData(word,translate,prmkey,database);
-
-        word = "Arm";
-        translate="Yoksul";
-        insertData(word,translate,prmkey,database);
-
-        word = "Natürlich";
-        translate="Doğal";
-        insertData(word,translate,prmkey,database);
     }
 
 }
