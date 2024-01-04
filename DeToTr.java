@@ -447,4 +447,39 @@ public class DeToTr {
 
     }
 
+     private void drinks()
+    {
+        packet_name = "İçecekler";
+        prmkey = random();
+        difficult ="0";
+        createPacket(packet_name,prmkey,database, difficult);
+        word = "Tee";
+        translate="Çay";
+        insertData(word,translate,prmkey,database);
+        word = "Koks";
+        translate="Kola";
+        insertData(word,translate,prmkey,database);
+        word = "Fruchtsaft";
+        translate="Meyve Suyu";
+        insertData(word,translate,prmkey,database);
+        word = "Limonade";
+        translate="Limonata";
+        insertData(word,translate,prmkey,database);
+        word = "Wein";
+        translate="Şarap";
+        insertData(word,translate,prmkey,database);
+        word = "Bier";
+        translate="Bira";
+        insertData(word,translate,prmkey,database);
+        word = "Cocktail";
+        translate="Kokteyl";
+        insertData(word,translate,prmkey,database);
+        word = "Wasser";
+        translate="Su";
+        insertData(word,translate,prmkey,database);
+        word = "Eistee";
+        translate="Soğuk çay";
+        insertData(word,translate,prmkey,database);
+    }
+
 }
