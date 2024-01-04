@@ -482,4 +482,66 @@ public class DeToTr {
         insertData(word,translate,prmkey,database);
     }
 
+     private void electronic_dev()
+    {
+        packet_name = "Elektronik Aletler";
+        prmkey = random();
+        difficult ="1";
+        createPacket(packet_name,prmkey,database, difficult);
+        word = "Computer";
+        translate="Bilgisayar";
+        insertData(word,translate,prmkey,database);
+        word = "Datenbank";
+        translate="Veritabanı";
+        insertData(word,translate,prmkey,database);
+        word = "Firewall";
+        translate="Güvenlik duvarı";
+        insertData(word,translate,prmkey,database);
+        word = "Prozessor";
+        translate="İşlemci";
+        insertData(word,translate,prmkey,database);
+        word = "Gerät";
+        translate="Cihaz";
+        insertData(word,translate,prmkey,database);
+        word = "Kühlschrank";
+        translate="Buzdolabı";
+        insertData(word,translate,prmkey,database);
+        word = "Tiefkühltruhe";
+        translate="Derin dondurucu";
+        insertData(word,translate,prmkey,database);
+        word = "Mikrowelle";
+        translate="Mikrodalga fırın";
+        insertData(word,translate,prmkey,database);
+        word = "Waschmaschine";
+        translate="Çamaşır Makinası";
+        insertData(word,translate,prmkey,database);
+        word = "Trockner";
+        translate="Kurutma makinası";
+        insertData(word,translate,prmkey,database);
+        word = "Ofen";
+        translate="Fırın";
+        insertData(word,translate,prmkey,database);
+        word = "Eisen";
+        translate="Ütü";
+        insertData(word,translate,prmkey,database);
+        word = "Lautsprecher";
+        translate="Hoparlör";
+        insertData(word,translate,prmkey,database);
+        word = "Tastatur";
+        translate="Klavye";
+        insertData(word,translate,prmkey,database);
+        word = "Smartphone";
+        translate="Akıllı telefon";
+        insertData(word,translate,prmkey,database);
+        word = "Drucker";
+        translate="Yazıcı";
+        insertData(word,translate,prmkey,database);
+        word = "Bildschirm";
+        translate="Ekran";
+        insertData(word,translate,prmkey,database);
+        word = "Speicherkarte";
+        translate="Hafıza kartı";
+        insertData(word,translate,prmkey,database);
+    }
+
 }
