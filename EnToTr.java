@@ -74,6 +74,7 @@ public class EnToTr {
         space();
         sport();
         times();
+
         tools();
         trade();
         trip();
@@ -799,41 +800,56 @@ public class EnToTr {
         translate="Bankaya nasıl gidebilirim?";
         insertData(word,translate,prmkey,database);
 
+
+        word = "Where will we have lunch?";
+        translate="Öğle yemeğini nerede yiyeceğiz?";
+        insertData(word,translate,prmkey,database);
+
+
         word = "Could you turn up the music please?";
         translate="Müziğin sesini açar mısın lütfen?";
         insertData(word,translate,prmkey,database);
 
-        insertData(word,translate,prmkey,database);
         word = "Who called me last night?";
         translate="Dün gece beni kim aradı?";
         insertData(word,translate,prmkey,database);
+
         word = "Who made this beautiful painting?";
         translate="Bu güzel tabloyu kim yaptı?";
         insertData(word,translate,prmkey,database);
+
         word = "Who is your favourite singer?";
         translate="Favori şarkıcınız kim?";
         insertData(word,translate,prmkey,database);
+
         word = "Who will be attending the meeting?";
         translate="Toplantıya kim katılacak?";
         insertData(word,translate,prmkey,database);
+
         word = "To whom should I address this letter?";
         translate="Bu mektubu kime ithafen yazmalıyım?";
         insertData(word,translate,prmkey,database);
+
         word = "With whom are you going to the concert?";
         translate="Kiminle konsere gidiyorsun?";
         insertData(word,translate,prmkey,database);
+
         word = "Whom did you see at the store?";
         translate="Dün mağazada kimi gördün?";
         insertData(word,translate,prmkey,database);
+
         word = "By whom was this book written?";
         translate="Bu kim tarafından yazıldı?";
         insertData(word,translate,prmkey,database);
+
         word = "For whom is this package?";
         translate="Bu paket kime ait?";
         insertData(word,translate,prmkey,database);
+
         word = "Whose coat is this?";
         translate="Bu kimin ceketi?";
         insertData(word,translate,prmkey,database);
+
         word = "Whose idea was it to go on a trip?";
         translate="Seyahate çıkmak kimin fikriydi?";
         insertData(word,translate,prmkey,database);
@@ -1096,9 +1112,7 @@ public class EnToTr {
         word = "Health";
         translate="Sağlık";
         insertData(word,translate,prmkey,database);
-        word = "Midwife";
-        translate="Ebe";
-        insertData(word,translate,prmkey,database);
+
         word = "Patient";
         translate="Hasta";
         insertData(word,translate,prmkey,database);
@@ -1807,24 +1821,29 @@ public class EnToTr {
         word = "Lampshade";
         translate="Abajur";
         insertData(word,translate,prmkey,database);
-        word = "Knife";
-        translate="Bıçak";
-        insertData(word,translate,prmkey,database);
-        word = "Fork";
-        translate="Çatal";
-        insertData(word,translate,prmkey,database);
-        word = "Spoon";
-        translate="Kaşık";
-        insertData(word,translate,prmkey,database);
-        word = "Plate";
-        translate="Tabak";
-        insertData(word,translate,prmkey,database);
         word = "Rug";
         translate="Halı";
         insertData(word,translate,prmkey,database);
         word = "Mirror";
         translate="Ayna";
         insertData(word,translate,prmkey,database);
+
+        word = "Bed";
+        translate="Yatak";
+        insertData(word,translate,prmkey,database);
+
+        word = "Computer desk";
+        translate="Bilgisayar Masası";
+        insertData(word,translate,prmkey,database);
+
+        word = "Bathtub";
+        translate="Küvet";
+        insertData(word,translate,prmkey,database);
+
+        word = "Commode";
+        translate="Komodin";
+        insertData(word,translate,prmkey,database);
+
         word = "Bedroom";
         translate="Yatak odası";
         insertData(word,translate,prmkey,database);
@@ -1867,6 +1886,9 @@ public class EnToTr {
         insertData(word,translate,prmkey,database);
         word = "Guitar";
         translate="Gitar";
+        insertData(word,translate,prmkey,database);
+        word = "Flute";
+        translate="Flüt";
         insertData(word,translate,prmkey,database);
     }
     private void country()
@@ -2315,12 +2337,13 @@ public class EnToTr {
         word = "Ankle";
         translate="Ayak bileği";
         insertData(word,translate,prmkey,database);
-        word = "Back";
-        translate="Sırt";
+        word = "Fingernail";
+        translate="Tırnak";
         insertData(word,translate,prmkey,database);
-        word = "Hip";
-        translate="Kalça";
+        word = "Eyelash";
+        translate="Kirpik";
         insertData(word,translate,prmkey,database);
+
         word = "Beard";
         translate="Sakal";
         insertData(word,translate,prmkey,database);
